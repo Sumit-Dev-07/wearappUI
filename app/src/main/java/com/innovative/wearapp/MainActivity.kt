@@ -25,6 +25,8 @@ class MainActivity : Activity() {
         val layoutParams: ViewGroup.LayoutParams = binding.liWatchLayer.layoutParams
         layoutParams.height = resources.displayMetrics.widthPixels
         binding.liWatchLayer.layoutParams = layoutParams
+        binding.liFasting.layoutParams = layoutParams
+        binding.liWeek.layoutParams = layoutParams
         //adjustInset()
         binding.circularProgressBar.apply {
             progress = 0f

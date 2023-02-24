@@ -9,7 +9,8 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="@android:color/black">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -20,6 +21,7 @@
                 android:id="@+id/liWatchLayer"
                 android:layout_width="match_parent"
                 android:layout_height="194dp"
+                android:gravity="center"
                 android:orientation="vertical">
 
 
@@ -100,8 +102,10 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/liFasting"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center"
                 android:orientation="vertical">
 
 
@@ -146,6 +150,237 @@
                     android:textSize="16sp" />
 
             </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/liWeek"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="Week"
+                    android:layout_marginTop="30dp"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginBottom="40dp"
+                    android:layout_gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="5dp"
+                        android:orientation="vertical">
+
+                        <ProgressBar
+                            style="@android:style/Widget.ProgressBar.Horizontal"
+                            android:layout_width="@dimen/bar_chart_width"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:max="100"
+                            android:progress="100"
+                            android:progressDrawable="@drawable/progress_scale_drawable"
+                             />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="M"
+                            android:textColor="#FFF"
+                            android:fontFamily="sans-serif-medium"
+                            android:layout_gravity="center"
+                            android:textSize="@dimen/bar_day_text_size"
+                            android:layout_marginTop="5dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="5dp"
+                        android:orientation="vertical">
+
+                        <ProgressBar
+                            style="@android:style/Widget.ProgressBar.Horizontal"
+                            android:layout_width="@dimen/bar_chart_width"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:max="100"
+                            android:progress="100"
+                            android:progressDrawable="@drawable/progress_scale_drawable"
+                             />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="T"
+                            android:fontFamily="sans-serif-medium"
+                            android:layout_gravity="center"
+                            android:textColor="#FFF"
+                            android:textSize="@dimen/bar_day_text_size"
+                            android:layout_marginTop="5dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="5dp"
+                        android:orientation="vertical">
+
+                        <ProgressBar
+                            style="@android:style/Widget.ProgressBar.Horizontal"
+                            android:layout_width="@dimen/bar_chart_width"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:max="100"
+                            android:progress="100"
+                            android:progressDrawable="@drawable/progress_scale_drawable"
+                             />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="W"
+                            android:textColor="#FFF"
+                            android:fontFamily="sans-serif-medium"
+                            android:layout_gravity="center"
+                            android:textSize="@dimen/bar_day_text_size"
+                            android:layout_marginTop="5dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="5dp"
+                        android:orientation="vertical">
+
+                        <ProgressBar
+                            style="@android:style/Widget.ProgressBar.Horizontal"
+                            android:layout_width="@dimen/bar_chart_width"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:max="100"
+                            android:progress="50"
+                            android:progressDrawable="@drawable/progress_scale_drawable_2"
+                             />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="T"
+                            android:textColor="#FFF"
+                            android:fontFamily="sans-serif-medium"
+                            android:layout_gravity="center"
+                            android:textSize="@dimen/bar_day_text_size"
+                            android:layout_marginTop="5dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="5dp"
+                        android:orientation="vertical">
+
+                        <ProgressBar
+                            style="@android:style/Widget.ProgressBar.Horizontal"
+                            android:layout_width="@dimen/bar_chart_width"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:max="100"
+                            android:progress="100"
+                            android:progressDrawable="@drawable/progress_scale_drawable"
+                             />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="F"
+                            android:textColor="#FFF"
+                            android:fontFamily="sans-serif-medium"
+                            android:layout_gravity="center"
+                            android:textSize="@dimen/bar_day_text_size"
+                            android:layout_marginTop="5dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="5dp"
+                        android:orientation="vertical">
+
+                        <ProgressBar
+                            style="@android:style/Widget.ProgressBar.Horizontal"
+                            android:layout_width="@dimen/bar_chart_width"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:max="100"
+                            android:progress="90"
+                            android:progressDrawable="@drawable/progress_scale_drawable_2"
+                             />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="S"
+                            android:textColor="#FFF"
+                            android:fontFamily="sans-serif-medium"
+                            android:layout_gravity="center"
+                            android:textSize="@dimen/bar_day_text_size"
+                            android:layout_marginTop="5dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="5dp"
+                        android:orientation="vertical">
+
+                        <ProgressBar
+                            style="@android:style/Widget.ProgressBar.Horizontal"
+                            android:layout_width="@dimen/bar_chart_width"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:max="100"
+                            android:progress="0"
+                            android:progressDrawable="@drawable/progress_scale_drawable_2"
+                             />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="S"
+                            android:textColor="#FFF"
+                            android:fontFamily="sans-serif-medium"
+                            android:layout_gravity="center"
+                            android:background="@drawable/bg_bottom_line"
+                            android:textSize="@dimen/bar_day_text_size"
+                            android:layout_marginTop="5dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+            </FrameLayout>
 
         </LinearLayout>
 
